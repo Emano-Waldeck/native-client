@@ -13,4 +13,6 @@ deploy:
     - linux.zip
     - mac.zip
   on:
-    repo: Emano-Waldeck/native-client
+    tags: true
+  overwrite: true
+  skip_cleanup: true
