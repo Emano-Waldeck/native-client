@@ -2,17 +2,15 @@ language: node_js
 node_js:
 - '6'
 script:
-- ./prepare.sh
+- "./prepare.sh"
 deploy:
   provider: releases
   prerelease: true
   api_key:
-    secure: jHB0IfT4ayiY01SNtSbsCAQd7O7qVOzBFW045qWIBeg4Ru+fcDEiEOe6fq1dPBQodrjfti5cKJyoJDpZ9EwPh5ZrANwj9B+IltOaJapR0wSX5vDlYVMBZuMR118JBfxxosw8SxQlVY9YNNRMKSxa75Ud4TkkWSzFOYvHhN8DdJYzBbFZW8LfubIpxenySkTtaBzhwmPqoVvjbq18Dp40FbkBFC40lfFe1UlGN+LQt3PjE7Gxg1yWzoWRL5eFbetdd+VBH4SVTiu/LvVZ8hhk2f3A72CaomiyPKQbzdt+/4skz9pEJZFdb3JvxaO8f0h5X8lS112/u+2qdT6xaAkYPvSipBdOypaLoG1aKgFuVseovsLn1/N8PqAWKzscmd1bf0USKxBkFw1yrvZFFxvmm2nZ8rUzCWrt7ISMvStO//4/YzQUzE1Lm7Z31qji9L0Uc8Xvg356NldNKLpelWJrsae8H5WIukDOdeE7twJ9RYdJ1M6+0jOzR//VMg5pTW0hNOQFDMy9IoAiqNqyUh0bKjf6MS5+/5QJsvzJip+rkuZnVMGxCMlZBT3gfZJSHRXYEIa2DR1p8g7+WBi6yUYSiF6pSjRdmnegnCcfXHpNzSYvdKFAJt5ea911iFtjYb26i4zMuKge3wj+xpSr6RJ/CyhiQudspipJF6gkE2t7sgM=
+    secure: P+OklHpoSS5SgDp+JwdhxfuhgG141KwoD8G9HEsFb/XxwmfWyz8NMX2LNA2ydyH5ckM25rhkArPuaonhQVHyFnF5twsUtp0HxBR2LtuA5OZtBjEBSRr42O7Am13lZCagq5Jw4PTpiPqmLhO+KSV6qh2mn25rS5mhUfKlOXosbCmK1awK0y8yXAlzWzSrX02ZjRIYLBhgNredl05Y+ehA+nj7lI/Xu/8Hc3HbekM/0WtzWQOlGy/shtK4JzifrOqnlzZZRDdHm324sSO869IHDAVVhHkupx+VW5u6Zuzs2N0xfmgJ5wqTmrjaVmuVJB1to8Y8vgbvy5FpWpGnl/0otKlSXO/mb+5Jvsf7X0ZntBBUJSpDVaarynqJM58AuGwb+aWML4IerWb4socrWvxLN3Ldmi52XwQXlyVP/Dm0Wg3UY8vP4c0FqLiUATSNmcPaXw8r5V4g7b1b1HV98ytKXDugTX7P8gdovdL1iUw/E6Dgx5VmfX5m7WOKFjvVSJUWl7NlOrV2aFgAPyswj5HmKRqKuG8hpk+Ds8nnRtdxs9WBuCSV0MQEO6VQFnpAO8gUuUF82nD9n3OaRLxO3qP+kDcTyKJ5C3OAIEJ4IpS4IZ423pR4wKk6vldt0mm2acnPJ+vHIZGyRWJICzpJrxwMY8kcMrrJYLHyxVatJcv5lq8=
   file:
     - windows.zip
     - linux.zip
     - mac.zip
   on:
-    tags: true
-  overwrite: true
-  skip_cleanup: true
+    repo: Emano-Waldeck/native-client
